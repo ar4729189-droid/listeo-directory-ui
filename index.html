@@ -1,0 +1,1895 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- font-awsome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <!-- header  -->
+    <nav class="navbar navbar-expand-lg bg-white border-bottom">
+        <div class="container">
+
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="https://listeo.pro/wp-content/uploads/2021/08/logo-1.png" style="max-height:38px;">
+            </a>
+
+            <!-- MOBILE ICONS (OUTSIDE MENU) -->
+            <div class="d-flex align-items-center d-lg-none ms-auto">
+
+                <button class="btn rounded-5 position-relative me-2 header-icons">
+                    <i class="fa-solid fa-cart-shopping">
+                    </i>
+                    <span class="badge bg-danger position-absolute top-0 start-100 translate-middle">
+                        0
+                    </span>
+                </button>
+
+                <button class="btn rounded-5 header-icon me-2">
+                    <i class="fa-solid fa-arrow-right-to-bracket">
+                    </i>
+                </button>
+
+            </div>
+
+            <!-- Toggler -->
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon" style="font-size: 16px; height: 30px;"></span>
+            </button>
+
+            <!-- MENU -->
+            <div class="collapse navbar-collapse" style="justify-content: space-between;" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+
+                    <li class="nav-item">
+                        <a class="nav-link home-btn" href="#">
+                            Home <i class="fa-solid fa-angle-down"></i>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link layer" href="#">
+                            <i class="fa-solid fa-layer-group"></i>
+                            Listings Layouts
+                            <i class="fa-solid fa-angle-down"></i>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link layer" href="#">
+                            <i class="fa-regular fa-user"></i>
+                            User Panel
+                            <i class="fa-solid fa-angle-down"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link layer rounded-5 mt-1 " href="#">
+                            <i class="fa-regular fa-file"></i>
+                            Pages
+                            <i class="fa-solid fa-angle-down"></i>
+                        </a>
+                    </li>
+
+                </ul>
+
+                <!-- DESKTOP ICONS (AFTER UL, LAST) -->
+                <div class="d-none d-lg-flex align-items-center" style="margin-right: 3.5rem;">
+                    <button class="btn rounded-5 position-relative me-4 header-icons">
+                        <i class="fa-solid fa-cart-shopping text-secondary"></i>
+                        <span class=" badge bg-danger position-absolute top-0 start-100 translate-middle">
+                            0
+                        </span>
+                    </button>
+                    <a class="btn rounded-5 header-icon text-secondary">
+                        <i class="fa-solid fa-arrow-right-to-bracket pe-3" style="width: 10px;"></i>
+                        Sign in
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- header end  -->
+    <!-- hero-secion  -->
+    <div id="main-container">
+        <div class="my-4" id="container">
+
+            <!-- HERO -->
+            <div class="hero-wrapper">
+
+                <!-- FIXED TEXT -->
+                <div class="hero-content">
+                    <h1 class="display-6" style="font-weight: 500;">
+                        Find Nearby Attractions Attractions
+                    </h1>
+                    <p class="opacity-75">
+                        Explore top-rated attractions, activities and more!
+                    </p>
+
+                    <a class="btn btn-danger rounded-pill px-4 py-2 mb-4">
+                        Browse Our Listings
+                    </a>
+
+                    <p class="small mb-2">
+                        Or browse featured categories:
+                    </p>
+
+                    <div class="d-flex gap-2 rounded-5 flex-wrap">
+                        <span class="category-pill">
+                            <i class="fa-regular fa-map pe-2 mt-2" style="font-size: 15px;"></i>
+                            Eat & Drink
+                        </span>
+                        <span class="category-pill">
+                            <i class="fa-solid fa-hand-fist pe-3 mt-2" style="font-size: 15px;"></i>
+
+                            Fitness
+                        </span>
+                        <span class="category-pill">
+                            <i class="fa-solid fa-volume-high pe-4 mt-2" style="font-size: 15px;"></i>
+                            Classifieds
+                        </span>
+                    </div>
+                </div>
+
+                <!-- CAROUSEL -->
+                <div id="heroCarousel" class="carousel slide carousel-fade pointer-event" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" id="img-1">
+                        </div>
+                        <div class="carousel-item" id="img-2">
+                        </div>
+                    </div>
+                    <!-- arrows -->
+                    <button class="carousel-control-prev" id="button-c" type="button" data-bs-target="#heroCarousel"
+                        data-bs-slide="prev">
+                        <i class="fa-solid fa-chevron-left span"></i>
+                    </button>
+                    <button class="carousel-control-next" id="button-e" type="button" data-bs-target="#heroCarousel"
+                        data-bs-slide="next">
+                        <i class="fa-solid fa-chevron-right span"></i>
+                    </button>
+
+                </div>
+            </div>
+
+            <!-- SEARCH -->
+            <div id="main-search-box">
+                <div style="width: 80%;">
+                    <div class="search-box p-3" id="search-box">
+                        <div class="cp-5">
+                            <ul class="nav-category d-flex mb-3 border-bottom border-2" id="pills-tab" role="tablist">
+                                <li class="nav-items p-3" role="presentation">
+                                    <button class="nav-link fw-semibold active position-relative" id="pills-home-tab"
+                                        data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab"
+                                        aria-controls="pills-home" aria-selected="true"
+                                        style="color: #d8d6d4;">All</button>
+                                </li>
+                                <li class="nav-items p-3" role="presentation">
+                                    <button class="nav-link fw-semibold position-relative" id="pills-profile-tab"
+                                        data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab"
+                                        aria-controls="pills-profile" aria-selected="false"
+                                        style="color: #d8d6d4;">Services</button>
+                                </li>
+                                <li class="nav-items p-3" role="presentation">
+                                    <button class="nav-link fw-semibold position-relative" id="pills-contact-tab"
+                                        data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab"
+                                        aria-controls="pills-contact" aria-selected="false"
+                                        style="color: #d8d6d4;">Rental</button>
+                                </li>
+                                <li class="nav-items p-3" role="presentation">
+                                    <button class="nav-link fw-semibold position-relative" id="eve"
+                                        id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+                                        type="button" role="tab" aria-controls="pills-contact" aria-selected="false"
+                                        style="color: #d8d6d4;">Event</button>
+                                </li>
+                                <li class="nav-items p-3" role="presentation">
+                                    <button class="nav-link fw-semibold position-relative" id="cla"
+                                        id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+                                        type="button" role="tab" aria-controls="pills-contact" aria-selected="false"
+                                        style="color: #d8d6d4;">Classified</button>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="search-box p-3 mt-0">
+
+                        <div class="row g-2">
+                            <div class="col-md-3 d-flex">
+                                <span class="text-align-left ">
+                                </span>
+                                <input class="form-control" placeholder="✨AI Search">
+                                <div style="border-right: 1px solid rgb(218, 214, 214); height: 30px;">
+                                </div>
+
+                            </div>
+                            <div class="col-md-3 d-flex">
+                                <input class="form-control" placeholder="Location">
+                                <div style="border-right: 1px solid rgb(218, 214, 214); height: 30px;"></div>
+                            </div>
+                            <div class="col-md-4  d-flex">
+                                <select class="form-select">
+                                    <option>
+                                        All Categories
+                                    </option>
+                                    <div style="border-right: 1px solid rgb(218, 214, 214); height: 30px;"></div>
+                                </select>
+                            </div>
+                            <div class="col-md-2 d-grid">
+                                <button class="btn btn-danger rounded-pill">
+                                    Search
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- hero-section end  -->
+    <!-- 1st section  -->
+    <div class="container-fluid px-0">
+
+        <h2 class="text-center my-4">
+            Popular Categories
+        </h2>
+        <div class="mx-auto mb-5" style="width:60px;height:2px;background:#ff3d57;"></div>
+
+        <!-- Slider viewport -->
+        <div class="slider-viewport">
+            <div id="sliderTrack" class="slider-track">
+                <div class="category-card col-sm-12" id="classification">
+                    <div class="card-overlay">
+                        <h3>
+                            Apartment
+                        </h3>
+
+                        <span class="listing-badge">
+                            1 listing
+                        </span>
+                        <a href="#" class="browse-btn align-items-center justify-content-center d-flex"
+                            style="width: 120px; height: 42.6px;">
+                            <h6 style="font-size: 15;" class=" align-items-center d-flex pt-2"> Browse</h6>
+                        </a>
+                    </div>
+                </div>
+                <div class="category-card col-sm-12" id="appartment">
+                    <div class="card-overlay">
+                        <h3>
+                            Cars
+                        </h3>
+
+                        <span class="listing-badge">
+                            1 listing
+                        </span>
+
+                        <a href="#" class="browse-btn align-items-center justify-content-center d-flex"
+                            style="width: 120px; height: 42.6px;">
+                            <h6 style="font-size: 15;" class=" align-items-center d-flex pt-2"> Browse</h6>
+                        </a>
+                    </div>
+                </div>
+                <div class="category-card col-sm-12" id="cars">
+                    <div class="card-overlay">
+                        <h3>
+                            Classifieds
+                        </h3>
+
+                        <span class="listing-badge">
+                            1 listing
+                        </span>
+
+                        <a href="#" class="browse-btn align-items-center justify-content-center d-flex"
+                            style="width: 120px; height: 42.6px;">
+                            <h6 style="font-size: 15;" class=" align-items-center d-flex pt-2"> Browse</h6>
+                        </a>
+                    </div>
+                </div>
+                <div class="category-card col-sm-12" id="coaching">
+                    <div class="card-overlay">
+                        <h3>
+                            Coaching
+                        </h3>
+
+                        <span class="listing-badge">
+                            1 listing
+                        </span>
+
+                        <a href="#" class="browse-btn align-items-center justify-content-center d-flex"
+                            style="width: 120px; height: 42.6px;">
+                            <h6 style="font-size: 15;" class=" align-items-center d-flex pt-2"> Browse</h6>
+                        </a>
+                    </div>
+                </div>
+                <div class="category-card col-sm-12" id="eat">
+
+                    <div class="card-overlay">
+                        <h3>
+                            Eat & Drink
+                        </h3>
+
+                        <span class="listing-badge">
+                            1 listing
+                        </span>
+
+                        <a href="#" class="browse-btn align-items-center justify-content-center d-flex"
+                            style="width: 120px; height: 42.6px;">
+                            <h6 style="font-size: 15;" class=" align-items-center d-flex pt-2"> Browse</h6>
+                        </a>
+                    </div>
+                </div>
+                <div class="category-card col-sm-12" id="events">
+                    <div class="card-overlay">
+                        <h3>
+                            Events
+                        </h3>
+
+                        <span class="listing-badge">
+                            1 listing
+                        </span>
+
+                        <a href="#" class="browse-btn align-items-center justify-content-center d-flex"
+                            style="width: 120px; height: 42.6px;">
+                            <h6 style="font-size: 15;" class=" align-items-center d-flex pt-2"> Browse</h6>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slider-dots">
+            <div class="text-center mt-4">
+                <div class="controls d-flex ">
+
+                    <button class="btn btn-sm" onclick="move(-1)">
+                        <i class="fa-solid fa-chevron-left" style="font-size: 20px; color: rgb(193, 190, 190);"></i>
+                    </button>
+
+                    <div id="dots" class="d-flex gap-2 mt-1">
+                        <div class="dot active" data-i="0">
+                        </div>
+                        <div class="dot" data-i="1"></div>
+                        <div class="dot" data-i="2"></div>
+                        <div class="dot" data-i="3"></div>
+                        <div class="dot" data-i="4"></div>
+                        <div class="dot" data-i="5"></div>
+
+                    </div>
+
+                    <button class="btn btn-sm" onclick="move(1)">
+                        <i class="fa-solid fa-angle-right" style="font-size: 20px; color: rgb(193, 190, 190);"></i>
+                    </button>
+
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+    <div style="border-bottom: 1px solid rgb(235, 233, 233); margin-top: 55px;">
+    </div>
+
+    <!-- 2nd section  -->
+    <!-- ===== CAROUSEL SECTION ===== -->
+    <div class="container py-5">
+        <h3 class="text-center">Most Visited Places</h3>
+        <div class="section-line"></div>
+        <p class="text-center text-secondary">Top-Rated Local Businesses</p>
+
+        <div class="carousel-viewport">
+            <div class="carousel-track" id="carouselTrack1">
+
+                <!-- CARD 1 -->
+                <div class="carousel-card">
+                    <div class="listing-card">
+                        <div class="custom-card position-relative">
+                            <div style="position:relative;">
+                                <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+                                    <!-- The slideshow/carousel -->
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="https://listeo.pro/wp-content/uploads/2019/01/photo-1493225457124-a3gheb161ffa5f-520x397.jpg"
+                                                alt="" class="d-block w-100" style="height: 326px;">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="https://listeo.pro/wp-content/uploads/2018/11/Stocksy_txpba41558atsF200_Small_1302672-520x397.jpg"
+                                                alt="" class="d-block w-100" style="height: 326px;">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="https://listeo.pro/wp-content/uploads/2019/01/photo-1477764803552-6dd3f4744774-520x397.jpg"
+                                                alt="" class="d-block w-100" style="height: 326px;">
+                                        </div>
+                                    </div>
+
+                                    <!-- Left and right controls/icons -->
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#demo"
+                                        data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon"></span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#demo"
+                                        data-bs-slide="next">
+                                        <span class="carousel-control-next-icon"></span>
+                                    </button>
+                                </div>
+                                <span class="card-tag">Business Coach. Coaching. Life Coach</span>
+                            </div>
+                            <div class="custom-card-body" style="padding-top: 90px;">
+                                <span class="featured-label"><i class="fas fa-star"></i> Featured</span>
+                                <div class="custom-card-title">George Burton – Life Coach <span class="verified"><i
+                                            class="fas fa-check-circle"></i></span> <span class="icon-electric"><i
+                                            class="fas fa-bolt"></i></span></div>
+                                <div class="custom-card-location"><i class="fas fa-map-marker-alt"></i> Ocean Avenue,
+                                    New York</div>
+                            </div>
+                            <div class="custom-card-footer">
+                                <div class="rating"><i class="fas fa-star"></i>4.9</div>
+                                <div style="font-weight: 600; font-size: 15px;">Starts from $100.00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="carousel-card">
+                    <div class="listing-card">
+                        <div class="custom-card position-relative">
+                            <div style="position:relative;">
+                                <!-- Carousel -->
+                                <div id="demo-2" class="carousel slide" data-bs-ride="carousel">
+
+                                    <!-- The slideshow/carousel -->
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="https://listeo.pro/wp-content/uploads/2024/10/kahl-orr-MPdl02hySb0-unsplashDFG-2-520x397.jpg"
+                                                alt="#" class="d-block w-100" style="height: 326px;">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="https://listeo.pro/wp-content/uploads/2024/10/kahl-orr-E36kvVnjOBk-unsplash-2-520x397.jpg"
+                                                alt="#" class="d-block w-100" style="height: 326px;">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="https://listeo.pro/wp-content/uploads/2024/10/kahl-orr-N10NDzCQoDU-unsplash-2-520x397.jpg"
+                                                alt="#" class="d-block w-100" style="height: 326px;">
+                                        </div>
+                                    </div>
+
+                                    <!-- Left and right controls/icons -->
+                                    <button class="carousel-control-prev align-items-center" type="button"
+                                        data-bs-target="#demo-2" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon"></span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#demo-2"
+                                        data-bs-slide="next">
+                                        <span class="carousel-control-next-icon"></span>
+                                    </button>
+                                </div>
+                                <span class="card-tag">Cars. For Rent</span>
+                                <span class="card-tag-secondary">Now Closed</span>
+                            </div>
+                            <div class="custom-card-body" style="padding-top: 40px;">
+                                <div class="custom-card-title" style="padding-top: 0px;">Sports Car <span
+                                        class=" icon-electric"><i class="fas fa-bolt"></i></span></div>
+                                <div class="custom-card-location"><i class="fas fa-map-marker-alt"></i> Suffolk County,
+                                    New York
+                                </div>
+                                <div class="card-badges">
+                                    <span class="card-badge"><i class="fas fa-bolt"></i> V6 Turbo</span>
+                                    <span class="card-badge"><i class="fas fa-music"></i> Burmester</span>
+                                    <span class="card-badge"><i class="fas fa-shield-alt"></i> Full Coverage</span>
+                                </div>
+                                <div class="card-icons">
+                                    <i class="fas fa-tachometer-alt"></i>
+                                    <i class="fas fa-tv"></i>
+                                    <i class="fas fa-wind"></i>
+                                    <i class="fas fa-road"></i>
+                                </div>
+                            </div>
+                            <div class="custom-card-footer">
+                                <div class="rating"><i class="fas fa-star"></i>4.3</div>
+                                <div style="font-weight: 600; font-size: 15px;">Starts from $20.00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="carousel-card">
+                    <div class="listing-card">
+                        <div class="custom-card">
+                            <div style="position:relative;">
+                                <!-- Carousel -->
+                                <div id="demo-3" class="carousel slide" data-bs-ride="carousel">
+
+                                    <!-- The slideshow/carousel -->
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="https://listeo.pro/wp-content/uploads/2018/11/photo-1487702232819-65ae859daf8a-1-520x397.jpg"
+                                                alt="Los Angeles" class="d-block w-100" style="height: 326px;">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="https://listeo.pro/wp-content/uploads/2018/11/photo-1493225457124-a3eb161ffa5f-520x397.jpg"
+                                                alt="" class="d-block w-100" style="height: 326px;">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="https://listeo.pro/wp-content/uploads/2018/11/photo-1524230659092-07f99a75c013-520x397.jpg"
+                                                alt="" class="d-block w-100" style="height: 326px;">
+                                        </div>
+                                    </div>
+
+                                    <!-- Left and right controls/icons -->
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#demo-3"
+                                        data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon"></span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#demo-3"
+                                        data-bs-slide="next">
+                                        <span class="carousel-control-next-icon"></span>
+                                    </button>
+                                </div>
+                                <span class="card-tag">Events</span>
+                            </div>
+                            <div class="custom-card-body mt-3">
+
+                                <div class="custom-card-title" style=" padding-top: 40px;">Sticky Band</div>
+                                <div class="custom-card-location">
+                                    <i class="fas fa-map-marker-alt"></i> West Orange, New York
+                                </div>
+                                <div class="card-badges">
+                                    <span class="card-badge"><i class="fas fa-check"></i> June 1, 2027 at 12:17
+                                        pm</span>
+                                    <span class="card-badge"><i class="fas fa-check"></i> June 20, 2027 at 3:13
+                                        pm</span>
+                                </div>
+                            </div>
+                            <div class="custom-card-footer">
+                                <div class="rating"><i class="fas fa-star"></i>4.3</div>
+                                <div style="font-weight: 600; font-size: 15px;">Starts from $10.00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 4 -->
+                <div class="carousel-card">
+                    <div class="listing-card">
+                        <div class="custom-card position-relative">
+                            <div style="position:relative;">
+                                <!-- Carousel -->
+                                <div id="demo-2" class="carousel slide" data-bs-ride="carousel">
+
+                                    <!-- The slideshow/carousel -->
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="https://listeo.pro/wp-content/uploads/2021/08/jo-520x397.jpeg"
+                                                alt="#" class="d-block w-100" style="height: 326px;">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="https://listeo.pro/wp-content/uploads/2021/08/photo-1623082085561-7d90af86ea53-520x397.jpeg"
+                                                alt="#" class="d-block w-100" style="height: 326px;">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="https://listeo.pro/wp-content/uploads/2021/08/photo-1623082085823-bffa167112ad-520x397.jpeg"
+                                                alt="#" class="d-block w-100" style="height: 326px;">
+                                        </div>
+                                    </div>
+
+                                    <!-- Left and right controls/icons -->
+                                    <button class="carousel-control-prev align-items-center" type="button"
+                                        data-bs-target="#demo-2" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon"></span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#demo-2"
+                                        data-bs-slide="next">
+                                        <span class="carousel-control-next-icon"></span>
+                                    </button>
+                                </div>
+                                <span class="card-tag">Classifieds,Electronics</span>
+                            </div>
+                            <div class="custom-card-body" style="padding-top: 90px;">
+                                <div class="custom-card-location" style="margin-bottom: 0px;"><i
+                                        class="fas fa-map-marker-alt"></i>
+                                    RonKonkoma.New York
+                                </div>
+                                <div class="custom-card-title">iphone 12 pro-Mint Condition <span
+                                        class=" icon-electric"><i class="fas fa-bolt"></i></span></div>
+
+                                <div class="card-badges">
+                                    <span class="card-badge"><i class="fas fa-bolt"></i> Used</span>
+                                    <span class="card-badge"><i class="fas fa-music"></i> iPhone 12 pro</span>
+                                    <span class="card-badge"><i class="fas fa-shield-alt"></i> 250GB</span>
+                                </div>
+
+                            </div>
+                            <div class="custom-card-footer">
+                                <div></div>
+                                <div style="font-weight: 600; font-size: 15px;">$199.00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 5 -->
+                <div class="carousel-card">
+                    <div class="listing-card">
+                        <div class="custom-card position-relative">
+                            <div style="position:relative;">
+                                <!-- Carousel -->
+                                <div id="demo-2" class="carousel slide" data-bs-ride="carousel">
+
+                                    <!-- The slideshow/carousel -->
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="https://listeo.pro/wp-content/uploads/2018/11/single-listing-01a-520x397.jpg"
+                                                alt="#" class="d-block w-100" style="height: 326px;">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="https://listeo.pro/wp-content/uploads/2018/11/single-listing-02a-520x397.jpg"
+                                                alt="#" class="d-block w-100" style="height: 326px;">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="https://listeo.pro/wp-content/uploads/2018/11/single-listing-03a-520x397.jpg"
+                                                alt="#" class="d-block w-100" style="height: 326px;">
+                                        </div>
+                                    </div>
+
+                                    <!-- Left and right controls/icons -->
+                                    <button class="carousel-control-prev align-items-center" type="button"
+                                        data-bs-target="#demo-2" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon"></span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#demo-2"
+                                        data-bs-slide="next">
+                                        <span class="carousel-control-next-icon"></span>
+                                    </button>
+                                </div>
+                                <span class="card-tag">Appartment,Luxury Appartments</span>
+                            </div>
+                            <div class="custom-card-body" style="padding-top: 40px;">
+                                <span class="featured-label"><i class="fas fa-star"></i> Featured</span>
+
+                                <div class="custom-card-title" style="padding-top: 0px;">Sunny Appartment <span
+                                        class=" icon-electric"><i class="fas fa-bolt"></i></span></div>
+                                <div class="custom-card-location"><i class="fas fa-map-marker-alt"></i> Dorothea Lane,
+                                    New York
+                                </div>
+                                <div class="card-badges">
+                                    <span class="card-badge"><i class="fas fa-bolt"></i> City Skyline</span>
+                                    <span class="card-badge"><i class="fas fa-music"></i>included</span>
+                                    <span class="card-badge"><i class="fas fa-shield-alt"></i> in-unit</span>
+                                </div>
+                                <div class="card-icons">
+                                    <i class="fas fa-tachometer-alt"></i>
+                                    <i class="fas fa-tv"></i>
+                                    <i class="fas fa-wind"></i>
+                                    <i class="fas fa-road"></i>
+                                </div>
+                            </div>
+                            <div class="custom-card-footer">
+                                <div class="rating"><i class="fas fa-star"></i>4.3</div>
+                                <div style="font-weight: 600; font-size: 15px;">$25.99-$35.00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 6 -->
+                <div class="carousel-card">
+                    <div class="listing-card" id="listing-card-6">
+                        <div class="custom-card position-relative">
+                            <div style="position:relative;">
+                                <!-- Carousel -->
+                                <div id="demo-2" class="carousel slide" data-bs-ride="carousel">
+
+                                    <!-- The slideshow/carousel -->
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="https://listeo.pro/wp-content/uploads/2018/11/Stocksy_txpba41558atsF200_Small_1302672-520x397.jpg"
+                                                alt="#" class="d-block w-100" style="height: 326px;">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="https://listeo.pro/wp-content/uploads/2019/01/photo-1477764803552-6dd3f4744774-520x397.jpg"
+                                                alt="#" class="d-block w-100" style="height: 326px;">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="https://listeo.pro/wp-content/uploads/2019/01/photo-1493225457124-a3gheb161ffa5f-520x397.jpg"
+                                                alt="#" class="d-block w-100" style="height: 326px;">
+                                        </div>
+                                    </div>
+
+                                    <!-- Left and right controls/icons -->
+                                    <button class="carousel-control-prev align-items-center" type="button"
+                                        data-bs-target="#demo-2" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon"></span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#demo-2"
+                                        data-bs-slide="next">
+                                        <span class="carousel-control-next-icon"></span>
+                                    </button>
+                                </div>
+                                <span class="card-tag">Barber,Services</span>
+                                <span class="card-tag-secondary">Now Closed</span>
+                            </div>
+                            <div class="custom-card-body">
+
+                                <div class="custom-card-title" style=" padding-top: 40px;">George Barber</div>
+                                <div class="custom-card-location">
+                                    <i class="fas fa-map-marker-alt"></i> Auburndale, Queens, NY
+                                </div>
+                            </div>
+                            <div class="custom-card-footer">
+                                <div class="rating"><i class="fas fa-star"></i>4.9</div>
+                                <div style="font-weight: 600; font-size: 15px;">$12.00-$40.00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- CONTROLS -->
+        <div class="slider-dots">
+            <div class="text-center mt-4">
+                <div class="controls d-flex ">
+                    <button class="btn btn-sm" onclick="moveCarousel1(-1)">
+                        <i class="fa-solid fa-chevron-left" style="font-size: 20px; color: rgb(193, 190, 190);"></i>
+                    </button>
+                    <div id="dots1" class="d-flex gap-2 mt-1"> <!-- CHANGED from 'dots' -->
+                        <div class="dot active" data-i="0"></div>
+                        <div class="dot" data-i="1"></div>
+                        <div class="dot" data-i="2"></div>
+                        <div class="dot" data-i="3"></div>
+                        <div class="dot" data-i="4"></div>
+                        <div class="dot" data-i="5"></div>
+                    </div>
+
+                    <button class="btn btn-sm" onclick="moveCarousel1(1)">
+                        <i class="fa-solid fa-angle-right" style="font-size: 20px; color: rgb(193, 190, 190);"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <hr>
+    <!-- local deal  -->
+
+    <!-- Title -->
+    <div class="text-center mb-5">
+        <h2 class="section-title mt-5">
+            Local Deals
+        </h2>
+        <div class="section-line"></div>
+        <p class="text-muted mt-3">
+
+            Exclusive neighborhood coupons</p>
+
+        <!-- Deals -->
+        <div class="tab justify-content-center d-flex">
+            <button id="defaultOpen" class="tablinks rounded-3" style=" height: 70px;"
+                onclick="openCity(event, 'London')">
+                <div class="justify-content-center d-flex">
+                    <i class="fa-solid fa-tags text-danger justify-content-center d-flex fs-5"></i>
+                </div>
+                <div>
+                    All
+                    Coupons
+                </div>
+            </button>
+            <button class="tablinks rounded-3" style="height: 70px;" onclick="openCity(event, 'Paris')">
+                <div class="justify-content-center d-flex">
+                    <i class="fa-solid fa-house-chimney text-danger justify-content-center d-flex fs-5"></i>
+                </div>
+                <div>
+                    Appartments
+                </div>
+            </button>
+            <button class="tablinks rounded-3" style="height: 70px;" onclick="openCity(event, 'Tokyo')">
+                <div class="justify-content-center d-flex">
+                    <i class="fa-solid fa-glasses text-danger justify-content-center d-flex fs-5"></i>
+                </div>
+                <div>
+                    Barber
+                </div>
+            </button>
+            <button class="tablinks rounded-3" style="height: 70px;" onclick="openCity(event, 'Events')">
+                <div class="justify-content-center d-flex">
+                    <i class="fa-solid fa-music text-danger justify-content-center d-flex fs-5"></i>
+                </div>
+                <div>
+                    Events
+                </div>
+            </button>
+            <button class="tablinks rounded-3" style="height: 70px;" onclick="openCity(event, 'Apartment')">
+                <div class="justify-content-center d-flex">
+                    <i class="fa-solid fa-map-location-dot text-danger justify-content-center d-flex fs-5"></i>
+                </div>
+                <div>
+                    Eat & Drink
+                </div>
+            </button>
+
+        </div>
+        <div class="justify-content-center d-flex">
+            <div class="mt-5" style="width: 84%;" id="main-tabcontent">
+                <div id="London" class="tabcontent">
+                    <div class="row g-4">
+
+                        <!-- Card 1 -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="deal-card">
+                                <div class="position-relative">
+                                    <img src="https://images.unsplash.com/photo-1517832606299-7ae9b720a186"
+                                        class="img-fluid">
+                                    <div class="deal-badge">
+                                        🔥 -20%
+                                    </div>
+                                </div>
+                                <div class="p-3" id="local-footer">
+                                    <h6>
+                                        George's Barber Shop
+                                    </h6>
+                                    <p class="text-muted small">
+                                        Get 20% off your entire order today only
+                                    </p>
+                                    <p class="text-green small">
+                                        Valid till: November 9, 2027
+                                    </p>
+                                    <button class="deal-code">
+                                        <span class="italic">
+                                            SAVE20NOW
+                                        </span>
+                                        <span class="eng">
+                                            Grab deal
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="deal-card">
+                                <div class="position-relative">
+                                    <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267"
+                                        class="img-fluid">
+                                    <div class="deal-badge">
+                                        🔥 -30%
+                                    </div>
+                                </div>
+                                <div class="p-3" id="local-footer">
+                                    <h6>
+                                        Sunny Apartment
+                                    </h6>
+                                    <p class="text-muted small">
+                                        Get 10% off your booking by using code
+                                    </p>
+                                    <p class="text-green small">
+                                        No expiry date
+                                    </p>
+                                    <button class="deal-code">
+                                        <span class="italic">
+                                            LIST30
+                                        </span>
+                                        <span class="eng">
+                                            Grab deal
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="deal-card">
+                                <div class="position-relative">
+                                    <img src="https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2"
+                                        class="img-fluid">
+                                    <div class="deal-badge">
+                                        🔥 -20%
+                                    </div>
+                                </div>
+                                <div class="p-3" id="local-footer">
+                                    <h6>
+                                        Sticky Band
+                                    </h6>
+                                    <p class="text-muted small">
+                                        Get 20% off your entire order today only
+                                    </p>
+                                    <p class="text-green small">
+                                        Valid till: November 9, 2027
+                                    </p>
+                                    <button class="deal-code">
+                                        <span class="italic">
+                                            SAVE20NOW
+                                        </span>
+                                        <span class="eng">
+                                            Grab deal
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 4 -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="deal-card">
+                                <div class="position-relative">
+                                    <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1"
+                                        class="img-fluid">
+                                    <div class="deal-badge">
+                                        🔥 -30%
+                                    </div>
+                                </div>
+                                <div class="p-3" id="local-footer">
+                                    <h6>
+                                        Tom's Restaurant
+                                    </h6>
+                                    <p class="text-muted small">
+                                        Get 10% off your booking by using code
+                                    </p>
+                                    <p class="text-green small">
+                                        No expiry date
+                                    </p>
+                                    <button class="deal-code">
+                                        <span class="italic">
+                                            LIST30
+                                        </span>
+                                        <span class="eng">
+                                            Grab deal
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="text-center mt-5">
+                        <button class="btn rounded-5 show-more">
+                            show More
+                            <i class="fa-solid fa-angle-down"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div id="Paris" class="tabcontent">
+                    <!-- Card 2 -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6">
+                                <div class="deal-card">
+                                    <div class="position-relative">
+                                        <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267"
+                                            class="img-fluid">
+                                        <div class="deal-badge">
+                                            🔥 -30%
+                                        </div>
+                                    </div>
+                                    <div class="p-3" id="local-footer">
+                                        <h6>
+                                            Sunny Apartment
+                                        </h6>
+                                        <p class="text-muted small">
+                                            Get 10% off your booking by using code
+                                        </p>
+                                        <p class="text-green small">
+                                            No expiry date
+                                        </p>
+                                        <button class="deal-code">
+                                            <span class="italic">
+                                                LIST30
+                                            </span>
+                                            <span class="eng">
+                                                Grab deal
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 2 -->
+                            <div class="col-lg-3 col-md-6">
+                                <div class="deal-card">
+                                    <div class="position-relative">
+                                        <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267"
+                                            class="img-fluid">
+                                        <div class="deal-badge">
+                                            🔥 -30%
+                                        </div>
+                                    </div>
+                                    <div class="p-3" id="local-footer">
+                                        <h6>
+                                            Sunny Apartment
+                                        </h6>
+                                        <p class="text-muted small">
+                                            Get 10% off your booking by using code
+                                        </p>
+                                        <p class="text-green small">
+                                            No expiry date
+                                        </p>
+                                        <button class="deal-code">
+                                            <span class="italic">
+                                                LIST30
+                                            </span>
+                                            <span class="eng">
+                                                Grab deal
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="Tokyo" class="tabcontent">
+                    <div class="container">
+                        <div class="row">
+                            <div class="row g-4">
+
+                                <!-- Card 1 -->
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="deal-card">
+                                        <div class="position-relative">
+                                            <img src="https://images.unsplash.com/photo-1517832606299-7ae9b720a186"
+                                                class="img-fluid">
+                                            <div class="deal-badge">
+                                                🔥 -20%
+                                            </div>
+                                        </div>
+                                        <div class="p-3" id="local-footer">
+                                            <h6>
+                                                George's Barber Shop
+                                            </h6>
+                                            <p class="text-muted small">
+                                                Get 20% off your entire order today only
+                                            </p>
+                                            <p class="text-green small">
+                                                Valid till: November 9, 2027
+                                            </p>
+                                            <button class="deal-code">
+                                                <span class="italic">
+                                                    SAVE20NOW
+                                                </span>
+                                                <span class="eng">
+                                                    Grab deal
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="Events" class="tabcontent">
+                    <div class="container mt-5">
+                        <div class="row">
+                            <!-- Card 4 -->
+                            <div class="col-lg-3 col-md-6">
+                                <div class="deal-card">
+                                    <div class="position-relative">
+                                        <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1"
+                                            class="img-fluid">
+                                        <div class="deal-badge">
+                                            🔥 -30%
+                                        </div>
+                                    </div>
+                                    <div class="p-3" id="local-footer">
+                                        <h6>
+                                            Tom's Restaurant
+                                        </h6>
+                                        <p class="text-muted small">
+                                            Get 10% off your booking by using code
+                                        </p>
+                                        <p class="text-green small">
+                                            No expiry date
+                                        </p>
+                                        <button class="deal-code">
+                                            <span class="italic">
+                                                LIST30
+                                            </span>
+                                            <span class="eng">
+                                                Grab deal
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="Apartment" class="tabcontent">
+                    <!-- Card 2 -->
+                    <div class="container mt-5">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="deal-card">
+                                <div class="position-relative">
+                                    <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267"
+                                        class="img-fluid">
+                                    <div class="deal-badge">
+                                        🔥 -30%
+                                    </div>
+                                </div>
+                                <div class="p-3" id="local-footer">
+                                    <h6>
+                                        Sunny Apartment
+                                    </h6>
+                                    <p class="text-muted small">
+                                        Get 10% off your booking by using code
+                                    </p>
+                                    <p class="text-green small">
+                                        No expiry date
+                                    </p>
+                                    <button class="deal-code">
+                                        <span class="italic">
+                                            LIST30
+                                        </span>
+                                        <span class="eng">
+                                            Grab deal
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- uses  -->
+    <section id="main">
+        <div class="container-fluid bg-light py-5">
+
+            <div class="text-center mb-5">
+                <h2 class="section-title">What our users say</h2>
+                <div class="section-line"></div>
+            </div>
+            <div id="testimonialCarousel" style="height: 400px;" class="carousel slide" data-bs-ride="carousel"
+                data-bs-interval="4000">
+                <div class="carousel-inner">
+
+                    <!-- ITEM 1 -->
+                    <div class="carousel-item active">
+                        <div class="testimonial-wrapper">
+                            <div class="text-center mx-4">
+                                <div class="testimonial-box mb-4">
+                                    “Capitalize on low hanging fruit to identify a ballpark value added activity…
+                                    Leverage
+                                    agile frameworks to provide a robust synopsis for high level overviews.
+                                    Iterative approaches foster collaborative thinking.Bring to the table win-win
+                                    survival
+                                    strategies to ensure proactive domination…”
+                                </div>
+                                <img src="https://randomuser.me/api/portraits/men/32.jpg" class="user-img mb-2">
+                                <h6 class="mb-1 justify-content-center d-flex">Jack Paden</h6>
+                                <div class="user-role">Restaurant Owner</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ITEM 2 -->
+                    <div class="carousel-item">
+                        <div class="testimonial-wrapper">
+                            <div class="text-center mx-4">
+                                <div class="testimonial-box mb-4">
+                                    “Organically grow the holistic world view of innovation and diversity… Iterative
+                                    approaches to corporate strategy foster thinking and empowerment
+                                    via workplace diversity.Override the digital divide with additional clickthroughs…”
+                                </div>
+                                <img src="https://randomuser.me/api/portraits/women/44.jpg" class="user-img mb-2">
+                                <h6 class="mb-1 justify-content-center d-flex">Jennie Smith</h6>
+                                <div class="user-role">Coffee Shop Owner</div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- ITEM 3 -->
+                    <div class="carousel-item">
+                        <div class="testimonial-wrapper">
+                            <div class="text-center mx-4">
+                                <div class="testimonial-box mb-4">
+                                    “Organically grow the holistic world view of innovation and diversity… Iterative
+                                    approaches to corporate strategy foster thinking and empowerment
+                                    via workplace diversity.Override the digital divide with additional clickthroughs…”
+                                </div>
+                                <img src="https://randomuser.me/api/portraits/women/44.jpg" class="user-img mb-2">
+                                <h6 class="mb-1 justify-content-center d-flex">Jennie Smith</h6>
+                                <div class="user-role">Coffee Shop Owner</div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Custom Indicators -->
+            <div class="custom-indicators mt-4 ">
+                <div class="d-flex align-items-center d-flex rounded-5" style="background-color: #f3f3f3;">
+                    <button class="btn btn-sm" style="color:  #adacac;" data-bs-target="#testimonialCarousel"
+                        data-bs-slide="prev">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+
+                    <div id="testimonialIndicatorTrack">
+                        <span class="testimonial-dot active" data-slide="0"></span>
+                        <span class="testimonial-dot" data-slide="1"></span>
+                        <span class="testimonial-dot" data-slide="2"></span>
+                    </div>
+
+                    <button class="btn btn-sm" style="color:  #adacac;" data-bs-target="#testimonialCarousel"
+                        data-bs-slide="next">
+                        <i class="fa-solid fa-angle-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="heros">
+            <div class="heros-overlay"></div>
+            <div class="heros-content" style="left: 149px;">
+                <h1 class="font">
+                    Streamline Your Business
+                </h1>
+                <p>
+                    We’re full-service, local agents who know how to find people and home each together. We use
+                    online tools with
+                    an unmatched search capability to make you smarter and faster.
+                </p>
+                <a href="#" class="btn">
+                    Get Started
+                </a>
+            </div>
+        </div>
+
+    </section>
+    <!-- browse by category  -->
+    <div class="browse-category justify-content-center d-flex mt-5">
+        <div style="width: 79%;" id="main-browse">
+            <h3 class="browse-title">
+                Browse by Category
+            </h3>
+            <div class="section-line mb-5"></div>
+            <div class="row">
+                <!-- Apartments -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="category-box">
+                        <div class="category-header">
+                            <i class="fa-solid fa-house"></i>
+                            <h6>
+                                Apartments
+                            </h6>
+                        </div>
+                        <div class="category-count">
+                            2 listings
+                        </div>
+                        <div class="category-list">
+                            <div class="category-item">
+                                Luxury Apartments
+                                <span>
+                                    2
+                                </span>
+                            </div>
+                            <div class="category-item">
+                                Student Housing
+                                <span>
+                                    0
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Classifieds -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="category-box">
+                        <div class="category-header">
+                            <i class="fa-solid fa-bullhorn"></i>
+                            <h6>
+                                Classifieds
+                            </h6>
+                        </div>
+                        <div class="category-count">
+                            1 listing
+                        </div>
+                        <div class="category-list">
+                            <div class="category-item">
+                                Electronics
+                                <span>
+                                    1
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Events -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="category-box">
+                        <div class="category-header">
+                            <i class="fa-solid fa-microphone"></i>
+                            <h6>
+                                Events
+                            </h6>
+                        </div>
+                        <div class="category-count">
+                            1 listing
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cars -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="category-box">
+                        <div class="category-header">
+                            <i class="fa-solid fa-car"></i>
+                            <h6>
+                                Cars
+                            </h6>
+                        </div>
+                        <div class="category-count">
+                            1 listing
+                        </div>
+                        <div class="category-list">
+                            <div class="category-item">
+                                For Rent
+                                <span>
+                                    1
+                                </span>
+                            </div>
+                            <div class="category-item">
+                                For Sale
+                                <span>
+                                    0
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Coaching -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="category-box">
+                        <div class="category-header">
+                            <i class="fa-solid fa-user-tie"></i>
+                            <h6>
+                                Coaching
+                            </h6>
+                        </div>
+                        <div class="category-count">
+                            1 listing
+                        </div>
+                        <div class="category-list">
+                            <div class="category-item">
+                                Business Coach
+                                <span>
+                                    1
+                                </span>
+                            </div>
+                            <div class="category-item">
+                                Life Coach
+                                <span>
+                                    1
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fitness -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="category-box">
+                        <div class="category-header">
+                            <i class="fa-solid fa-dumbbell"></i>
+                            <h6>
+                                Fitness
+                            </h6>
+                        </div>
+                        <div class="category-count">
+                            1 listing
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Eat & Drink -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="category-box">
+                        <div class="category-header">
+                            <i class="fa-solid fa-utensils"></i>
+                            <h6>
+                                <i class="fa-regular fa-map"></i>
+                                Eat & Drink
+                            </h6>
+                        </div>
+                        <div class="category-count">
+                            1 listing
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Other -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="category-box">
+                        <div class="category-header">
+                            <i class="fa-solid fa-star"></i>
+                            <h6>
+                                Other
+                            </h6>
+                        </div>
+                        <div class="category-count">
+                            1 listing
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Services -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="category-box">
+                        <div class="category-header">
+                            <i class="fa-solid fa-scissors"></i>
+                            <h6>
+                                Services
+                            </h6>
+                        </div>
+                        <div class="category-count">
+                            2 listings
+                        </div>
+                        <div class="category-list">
+                            <div class="category-item">
+                                Barber
+                                <span>
+                                    1
+                                </span>
+                            </div>
+                            <div class="category-item">
+                                Florist
+                                <span>
+                                    1
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Listing  -->
+    <section class="py-5 justify-content-center d-flex">
+        <div style="width: 80%;" id="main-listing">
+            <div>
+                <h2 class="text-center section-title">
+                    Get an Exposure For Your Listing
+                </h2>
+            </div>
+
+            <div class="row mt-5">
+                <!-- Professional -->
+                <div class="col-lg-4 col-md-6 col-sm-11 mt-3 justify-content-center d-flex">
+                    <div class="card pricing-card">
+                        <div class="card-header bg-light">
+                            Professional <i class="fa-solid fa-briefcase ms-1"></i>
+                        </div>
+
+                        <div class="card-body">
+                            <p class="text-muted small">
+                                One time fee for one listing, highlighted in the search results
+                            </p>
+
+                            <div class="price">$29.99</div>
+
+                            <p class="fw-semibold mb-2">Professional features:</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fa-solid fa-check"></i>Unlimited number of listings</li>
+                                <li><i class="fa-solid fa-check"></i>Unlimited availability of listings</li>
+                                <li><i class="fa-solid fa-check"></i>Booking Module enabled</li>
+                                <li><i class="fa-solid fa-check"></i>Reviews Module enabled</li>
+                                <li><i class="fa-solid fa-check"></i>Social Links Module enabled</li>
+                                <li><i class="fa-solid fa-check"></i>Opening Hours Module enabled</li>
+                                <li><i class="fa-solid fa-check"></i>Video option enabled</li>
+                                <li><i class="fa-solid fa-check"></i>Coupons option enabled</li>
+                                <li><i class="fa-solid fa-check"></i>Gallery Module enabled</li>
+                            </ul>
+                        </div>
+
+                        <div class="card-footer bg-transparent border-0">
+                            <button class="btn btn-danger w-100">
+                                <i class="fa-solid fa-cart-shopping me-2"></i>Add Listing
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Extended -->
+                <div class="col-lg-4 mt-3 col-md-6 col-sm-11 justify-content-center d-flex">
+                    <div class="card pricing-card featured h-100">
+                        <div class="card-header">
+                            <span> Extended <i class="fa-solid fa-rocket ms-1"></i></span>
+                            <span class="best-value">Best Value</span>
+
+                        </div>
+
+
+                        <div class="card-body">
+                            <p class="text-muted small">
+                                One time fee for one listing, highlighted in the search results
+                            </p>
+
+                            <div class="price">$9.99</div>
+
+                            <p class="fw-semibold mb-2">Extended features:</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fa-solid fa-check"></i>This plan includes 3 listings</li>
+                                <li><i class="fa-solid fa-check"></i>Unlimited availability of listings</li>
+                                <li><i class="fa-solid fa-check"></i>Booking Module enabled</li>
+                                <li><i class="fa-solid fa-check"></i>Reviews Module enabled</li>
+                                <li><i class="fa-solid fa-check"></i>Social Links Module enabled</li>
+                                <li><i class="fa-solid fa-check"></i>Opening Hours Module enabled</li>
+                                <li><i class="fa-solid fa-check"></i>Video option enabled</li>
+                                <li><i class="fa-solid fa-check"></i>Coupons option enabled</li>
+                                <li><i class="fa-solid fa-check"></i>Gallery Module enabled</li>
+                            </ul>
+                        </div>
+
+                        <div class="card-footer bg-transparent border-0">
+                            <button class="btn btn-danger w-100">
+                                <i class="fa-solid fa-cart-shopping me-2"></i>Add Listing
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Basic -->
+                <div class="col-lg-4 mt-3 col-md-6 col-sm-11 justify-content-center d-flex">
+                    <div class="card pricing-card h-100">
+                        <div class="card-header bg-light">
+                            Basic <i class="fa-solid fa-gem ms-1"></i>
+                        </div>
+
+                        <div class="card-body">
+                            <p class="text-muted small">
+                                Most affordable plan, one standard listing active for 30 days
+                            </p>
+
+                            <div class="price">$4.99</div>
+
+                            <p class="fw-semibold mb-2">Basic features:</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fa-solid fa-check"></i>This plan includes 1 listing</li>
+                                <li><i class="fa-solid fa-check"></i>Listings are visible for 30 days</li>
+                                <li><i class="fa-solid fa-check"></i>Booking Module enabled</li>
+                                <li><i class="fa-solid fa-check"></i>Reviews Module enabled</li>
+                                <li><i class="fa-solid fa-check"></i>Social Links Module enabled</li>
+                                <li><i class="fa-solid fa-check"></i>Gallery Module enabled</li>
+                            </ul>
+                        </div>
+
+                        <div class="card-footer bg-transparent border-0">
+                            <button class="btn btn-danger w-100">
+                                <i class="fa-solid fa-cart-shopping me-2"></i>Add Listing
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div>
+                <h2 class="section-title">
+                    From The Blog
+                </h2>
+            </div>
+            <div class="section-line"></div>
+            <p class="section-subtitle">Latest News From The Blog</p>
+
+            <div class="row mt-5 justify-content-center d-flex gap-3" id="blog-row">
+
+                <!-- Card 1 -->
+                <div class="col-lg-auto col-md-6 col-sm-12">
+                    <div class="blog-card">
+                        <span class="blog-badge">Tips</span>
+                        <img src="https://listeo.pro/wp-content/uploads/2019/01/j-768x1024.jpg" alt="">
+                        <div class="blog-overlay">
+                            <span class="blog-date">November 16, 2025</span>
+                            <h5 class="blog-title">Top 20 Places to Stay in Europe</h5>
+                            <p class="blog-text">
+                                Dignissim act tristique ut, scelerisque eu massa. Vestibulum ligula nunc, rutrum in
+                                malesuada vitae, tempus...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-lg-auto col-md-6 col-sm-12">
+                    <div class="blog-card">
+                        <span class="blog-badge">Tips</span>
+                        <img src="https://listeo.pro/wp-content/uploads/2019/02/dfg-768x768.jpg" alt="">
+                        <div class="blog-overlay">
+                            <span class="blog-date">November 16, 2025</span>
+                            <h5 class="blog-title">Experience In The Spotlight</h5>
+                            <p class="blog-text">
+                                Nam nisl lacus, dignissim ac tristique ut, scelerisque eu massa. Vestibulum ligula
+                                nunc,
+                                rutrum in...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-lg-auto col-md-6 col-sm-12 mt-md-2">
+                    <div class="blog-card">
+                        <span class="blog-badge">Room Design</span>
+                        <img src="https://listeo.pro/wp-content/uploads/2019/02/photo-1502672260266-1c1ef2d93688-768x571.jpg"
+                            alt="">
+                        <div class="blog-overlay">
+                            <span class="blog-date">November 16, 2025</span>
+                            <h5 class="blog-title">7 Big Ideas For Small Places</h5>
+                            <p class="blog-text">
+                                Nam nisl lacus, dignissim ac tristique ut, scelerisque eu massa. Vestibulum ligula
+                                nunc,
+                                rutrum in...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-12 justify-content-center d-flex mt-5">
+                <button id="view-btn" class="btn rounded-pill">
+                    View Blog
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- footer  -->
+    <div class="container justify-content-center w-100" style="height:auto; ">
+        <div class="row justify-content-center d-flex w-100 mt-5 pt-5">
+            <div class="col-lg-4 col-md-6 col-sm-11" id="footer-sections">
+                <p class="p"> <img class="footer-logo" src="https://listeo.pro/wp-content/uploads/2021/08/logo-1.png"
+                        alt="adsf">
+                </p>
+                <p class="p">Listeo is
+                    <strong>
+                        all-in-one WordPress directory theme
+                    </strong>
+                    with front-end
+                    user
+                    dashboard,
+                    <strong>
+                        built-in booking system
+                    </strong>
+                    ,<strong>
+                        multi-vendor
+                        marketplace</strong>
+                    , private messagging and many more gorgeous
+                    features!
+                </p>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-11" id="footer-sections">
+                <h4 class="h4">
+                    Helpful Links
+                </h4>
+                <div class="footer-2nd-main d-flex gap-5">
+                    <div class="left">
+                        <ul class="footer-ul mt-2">
+                            <li class="text-secondary" id="footer-li"><a>
+                                    <i class="fa-solid fa-angle-right"></i> Reviews</a></li>
+                            <li class="text-secondary" id="footer-li"><a>
+                                    <i class="fa-solid fa-angle-right"></i> Bookmarks</a></li>
+                            <li class="text-secondary" id="footer-li"><a>
+                                    <i class="fa-solid fa-angle-right"></i> Bookings</a></li>
+                            <li class="text-secondary" id="footer-li"><a>
+                                    <i class="fa-solid fa-angle-right"></i> Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="right d-flex">
+                        <ul class="footer-ul mt-2">
+                            <li class="text-secondary" id="footer-li"><a><i class="fa-solid fa-angle-right"></i>My
+                                    Profile</a></li>
+                            <li class="text-secondary" id="footer-li">
+                                <a><i class="fa-solid fa-angle-right"></i>My Listings</a>
+                            </li>
+                            <li class="text-secondary" id="footer-li"><a><i
+                                        class="fa-solid fa-angle-right"></i>Bookmarks</a></li>
+                            <li class="text-secondary" id="footer-li">
+                                <a><i class="fa-solid fa-angle-right"></i>Add Listing</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-11" id="footer-sections">
+                <h4>
+                    Contact Us
+                </h4>
+                <p class="p">
+                    12345 Little Lonsdale St, Melbourne
+                    <br>
+                    Phone: (123) 123-456
+                    <br>
+                    E-Mail:
+                    <a class="Email" href="#">office@example.com</a>
+                </p>
+                <p>
+                    <img class="footer-img" width="218" height="32" decoding="async" style="max-height: 30px;"
+                        src="https://listeo.pro/wp-content/uploads/2024/02/Layer-2.svg"
+                        data-lazy-src="https://listeo.pro/wp-content/uploads/2024/02/Layer-2.svg"
+                        data-ll-status="loaded">
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="container">
+        <div class="footer-new-bottom-inner ms-lg-5 d-flex justify-content-space-between align-items-center"
+            style="background-color: #f6f6f6; width: 90%; border-radius: 5px; height: 67px; letter-spacing: normal;">
+            <div class="footer-new-bottom-left w-50 pb-2 mt-1">© Theme by Purethemes.net. All Rights Reserved. </div>
+            <div class="footer-new-bottom-right w-50 mt-2">
+
+                <ul class="new-footer-social-icons d-flex  justify-content-end gap-2">
+                    <li><a><i class="fa-brands fa-x-twitter"></i></a></li>
+                    <li><a><i class="fa-brands fa-square-linkedin"></i></a>
+                    </li>
+                    <li><a><i class="fa-brands fa-facebook-messenger"></i></a></li>
+                    <li><a><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- js  -->
+    <script>
+        //  first 
+        const track = document.getElementById("sliderTrack");
+        const dots = document.querySelectorAll(".dot");
+        const cards = Array.from(track.children);
+
+        let index = 0;
+        let isMoving = false;
+
+        function getCardWidth() {
+            return cards[0].getBoundingClientRect().width;
+        }
+
+        function updateSlider() {
+            const cardWidth = getCardWidth();
+            track.style.transform = `translateX(-${index * cardWidth}px)`;
+
+            dots.forEach(d => d.classList.remove("active"));
+            dots[index].classList.add("active");
+        }
+
+        function move(dir) {
+            if (isMoving) return;
+            isMoving = true;
+
+            index += dir;
+            if (index < 0) index = dots.length - 1;
+            if (index >= dots.length) index = 0;
+
+            updateSlider();
+            setTimeout(() => isMoving = false, 600);
+        }
+
+        dots.forEach(dot => {
+            dot.addEventListener("click", () => {
+                index = +dot.dataset.i;
+                updateSlider();
+            });
+        });
+
+        // end 
+        // 2nd 
+        const carouselTrack1 = document.getElementById('carouselTrack1'); // unchanged
+        const cards1 = carouselTrack1.querySelectorAll('.carousel-card'); // unchanged
+
+        // CHANGED: Unique dots container ID
+        const dotsContainer1 = document.getElementById('dots1'); // <-- changed from 'dots'
+
+        // CHANGED: Unique index variable
+        let index1 = 0;
+
+        // Determine visible cards
+        function getVisibleCards1() { // <-- changed function name
+            if (window.innerWidth >= 992) return 2;
+            if (window.innerWidth >= 576) return 2;
+            return 1;
+        }
+
+        // Update carousel and dots
+        function updateCarousel1() { // <-- changed function name
+            const visible = getVisibleCards1(); // <-- changed
+            const cardWidth = cards1[0].offsetWidth;
+            const maxIndex = cards1.length - visible;
+
+            if (index1 > maxIndex) index1 = 0;
+            if (index1 < 0) index1 = maxIndex;
+
+            carouselTrack1.style.transform = `translateX(-${index1 * cardWidth}px)`;
+
+            // CHANGED: update unique dots
+            const dots = dotsContainer1.querySelectorAll('.dot');
+            dots.forEach((dot, i) => dot.classList.toggle('active', i === index1));
+        }
+
+        // Move carousel
+        function moveCarousel1(dir) { // <-- changed function name
+            index1 += dir;
+            updateCarousel1();
+        }
+
+        // Dot click functionality
+        dotsContainer1.querySelectorAll('.dot').forEach(dot => { // <-- changed to dotsContainer1
+            dot.addEventListener('click', () => {
+                index1 = parseInt(dot.dataset.i);
+                updateCarousel1();
+            });
+        });
+
+        // Update carousel on load and resize
+        window.addEventListener('load', updateCarousel1); // <-- changed function name
+        window.addEventListener('resize', updateCarousel1);
+        // end 
+        // 3rd
+        document.getElementById("defaultOpen").click();
+
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+        // 4th js 
+        const testimonialCarouselEl = document.getElementById('testimonialCarousel');
+        const testimonialDots = document.querySelectorAll('.testimonial-dot');
+
+        const testimonialCarousel = new bootstrap.Carousel(testimonialCarouselEl);
+
+        testimonialCarouselEl.addEventListener('slid.bs.carousel', (e) => {
+            testimonialDots.forEach(dot => dot.classList.remove('active'));
+            testimonialDots[e.to].classList.add('active');
+        });
+
+        testimonialDots.forEach(dot => {
+            dot.addEventListener('click', () => {
+                testimonialCarousel.to(dot.dataset.slide);
+            });
+        });
+
+    </script>
+    <!-- the end  -->
+</body>
+
+</html>
